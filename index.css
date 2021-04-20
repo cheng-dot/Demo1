@@ -1,0 +1,284 @@
+body{
+    background: #efefef;
+    margin: 0;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+hr {
+    height: 0;
+    border: none;
+    border-top: 1px solid #dedede;
+}
+.clearfix::after{
+    clear: both;
+    display: block;
+    content: '';
+}
+.topNavBar{
+    padding-top: 14px;
+    position: fixed;
+    width: 100%;
+}
+.topNavBar .logo{
+    padding-top: 1px;
+    padding-bottom: 2px;
+    padding-left: 20px;
+}
+.nav{
+    padding-top: 2.5px;
+    padding-bottom: 3px;
+}
+.topNavBar>nav>ul{  
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.topNavBar>nav>ul>li{
+    float: left;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+.topNavBar>nav>ul>li>a{
+    font-size: 14px;
+    color:#CBCDD0;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid transparent;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: block;
+}
+.topNavBar>nav>ul>li>a:hover{
+    border-bottom: 3px solid #07AAF5;
+    transition: 0.3s;
+}
+.topNavBar .logo .rs{
+    font-size: 32px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #07AAF5;
+}
+.topNavBar .logo .card{
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #9A9DA2;
+}
+.banner{
+    background-image: url(./img/bg.jpg);
+    height: 515px;
+    background-position: center center;
+    background-size: cover;
+}
+.banner .mask{
+    height: 515px;
+    background-color:rgba(0,0,0,0.5);
+}
+.userCard{
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -350px;
+    background-color: white;
+    box-shadow: 0px 0px 0px 2px rgba(7,170,245,1);
+}
+.userCard .welcome{
+    background-color:#13A6E9;
+    display: inline-block;
+    padding: 4px 16px;
+    color: white;
+}
+.userCard .picture{
+    float: left;
+    margin-right: 60px
+}
+.userCard .text{
+    float: left;
+    width: 415px;
+}
+.userCard .pictureAndText{
+    margin-left: 50px;
+    padding-top: 60px;
+}
+.userCard .text h1{
+    padding-top: 20px;
+}
+.userCard .text p{
+    font-size: 12px;
+    padding-top: 5px;
+    padding-bottom: 25px;
+}
+.userCard .text dl dt,
+.userCard .text dl dd{
+    padding-top: 20px;
+    float: left;
+    font-size: 14px;
+}
+.userCard .text dl dt{
+    width: 30%;
+    font-size: 12px;
+    font-weight: bold;
+}
+.userCard .text dl dd{
+    width: 70%;
+    color: #9EA1A8;
+}
+.userCard >footer.media{
+    background-color: #07AAF5;
+    text-align: center;
+    margin-top: 55px;
+    height: 60px;
+}
+.userCard .media .icon{
+    width: 30px;
+    height: 30px;
+    fill: white;;
+    margin: 0 30px;
+}
+.userCard > footer.media > a {
+    line-height: 70px;
+}
+.downloadButtonWrapper{
+    text-align: center;
+}
+.downloadButton{
+    font-size: 14px;
+    padding:21px 55px;
+    border: 1px solid #C4C4C4;
+    display: inline-block;
+    background-color: #E0E0E0;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+.downloadButton:hover{
+    background-color: #07AAF5;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.8);
+    transition: 0.5s;
+}
+body>main>p.selfIntroduction{
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    line-height: 35px;
+    font-weight: lighter;
+    font-size: 14px;
+}
+body>section.skills{
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+body>section.skills>ol,li{
+    list-style: none;
+}
+body>section.skills>h2{
+    text-align: center;
+}
+.skills{
+    max-width: 900px;
+    margin-top: 30px;
+}
+.skills h3{
+    font-weight: normal;
+    font-size: small;
+}
+.skills ol{
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+    margin-top: 30px;
+    background-color: #FFFFFF;
+    padding: 30px 50px 60px 50px;
+}
+.skills>ol>li{
+    float: left;
+    width: 40%;
+    line-height: 30px;
+    box-sizing: border-box;
+    padding-top: 30px;
+}
+.skills>ol>li:nth-child(even){
+    float: right;
+}
+section.skills .progressBar{
+    height: 5px;
+    border-radius: 3px;
+    background-color: #CDEEFD;
+}
+section.skills .progress{
+    border-radius: 3px;
+    height: 100%;
+    background-color: #07AAF5;
+    width: 70%;
+}
+.portfolio{
+    margin-top: 50px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.portfolio nav{
+    width: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    display: inline-block;
+}
+.portfolio nav ol{
+    display: inline-block;
+}
+.portfolio nav ol>li{
+    cursor: pointer;
+    float: left;
+    padding: 0 20px;
+}
+.portfolio .portfolioBar{
+    margin-top: 5px;
+    width: 238px;
+    margin-left: 30px;
+    background-color: #CDEEFD;
+    height: 5px;
+    border-radius: 3px;
+}
+.portfolio .barInner{
+    background-color: #07AAF5;
+    border-radius: 3px;
+    height: 5px;
+    transition:all 0.3s;
+}
+.portfolio .barInner.statu1{
+    width: 15%;
+    margin-left: 0px;
+}
+.portfolio .barInner.statu2{
+    width: 15%;
+    margin-left: 73px;
+}
+.portfolio .barInner.statu3{
+    margin-left: 145px;
+    width: 40%;
+}
+.portfolio .works{
+    height: 520px;
+    margin-bottom: 200px;
+    position: relative;
+    margin-left: 0;
+    margin-right: 0;
+}
+.portfolio .works .big,
+.portfolio .works .small{
+    position: absolute;
+}
+.portfolio .works .big{
+    padding-left: 45px;
+}
+.portfolio .works .small{
+    padding-right: 45px;
+}

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人简历</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="//at.alicdn.com/t/font_2450934_a1f2duw9cx8.js"></script>
+    <style type="text/css">
+        .icon {
+           width: 1em; height: 1em;
+           vertical-align: -0.15em;
+           fill: currentColor;
+           overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="topNavBar clearfix">
+        <a href="#" class="logo" style="float: left;">
+            <span class="rs">Rs</span>
+            <span class="card">card</span>
+        </a>
+        <nav class="nav" style="float: right;">
+            <ul>
+                <li><a href="#">关于</a></li>
+                <li><a href="#">技能</a></li>
+                <li><a href="#">作品</a></li>
+                <li><a href="#">博客</a></li>
+                <li><a href="#">日历</a></li>
+                <li><a href="#">联系方式</a></li>
+                <li><a href="#">其他</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="banner">
+        <div class="mask"></div>
+    </div>
+    <main><!-- 主要内容 -->
+        <div class="userCard">
+            <div class="pictureAndText clearfix">
+                <div class="picture">
+                    <img src="./img/user2.jpg"  alt="头像" style="box-shadow: 0px 0px 2px 2px rgb(7 170 245); width: 300px; height: 300px;"> 
+                </div>
+                <div class="text">
+                    <span class="welcome">Hello</span>
+                    <h1>吴晨</h1>
+                    <p>前端开发工程师</p>
+                    <hr>
+                    <dl>
+                        <dt>年龄</dt>
+                        <dd>20</dd>
+                        <dt>所在城市</dt>
+                        <dd>南昌</dd>
+                        <dt>邮箱</dt>
+                        <dd>2312335026@qq.com</dd>
+                        <dt>手机</dt>
+                        <dd>15797703638</dd>
+                    </dl>
+                </div>
+            </div>
+            <footer class="media">
+                <a href="#"><svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-qq"></use>
+                </svg></a>
+                <a href="#"><svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-weibo"></use>
+                </svg></a>
+                <a href="#"><svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-douyin"></use>
+                </svg></a>
+                <a href="#"><svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-zhihu"></use>
+                </svg></a>
+            </footer>
+        </div>
+
+        <p class="downloadButtonWrapper">
+            <a href="./img/resume.jpg" class="downloadButton" target=""download>下载 PDF 简历</a>
+        </p>
+        <p class="selfIntroduction">
+            个人介绍：具有扎实的专业知识基础，对专业知识有较深的理解;具有较强的学习潜质，积极进取，认真负责的态度;具有团队合作精神，善于与他人沟通，特别是技术知识，虚心请教他人，共同学习，共同进步;有良好的生活习惯，和别人相处。与人相处融洽，善于与人沟通。
+        </p>
+    </main>
+
+<section class="skills">
+        <h2 style="color: #3D4451;">技能</h2>
+            <ol class="clearfix">
+            <li>
+                <h3>
+                    HTML5 &amp; CSS3
+                </h3>
+                <div class="progressBar">
+                    <div class="progress"></div>
+                </div>
+            </li>
+            <li>
+                <h3>Javascript</h3>
+                <div class="progressBar">
+                    <div class="progress" style="width: 60%;"></div>
+                </div>
+            </li>
+            <li>
+                <h3>JQuery</h3>
+                <div class="progressBar" >
+                    <div class="progress" style="width: 50%;"></div>
+                </div>
+            </li>
+            <li>
+                <h3>Vue</h3>
+                <div class="progressBar">
+                    <div class="progress"style="width: 55%;"></div>
+                </div>
+            </li>
+            <li>
+                <h3>React</h3>
+                <div class="progressBar">
+                    <div class="progress"style="width: 60%;"></div>
+                </div>
+            </li>
+            <li>
+                <h3>HTTP</h3>
+                <div class="progressBar">
+                    <div class="progress"></div>
+                </div>
+            </li>
+        </ol>
+    </section>
+
+    <section class="portfolio">
+       <h2>作品集</h2> 
+       <nav>
+           <ol>
+               <li id="portfolio1">所有</li>
+               <li id="portfolio2">框架</li>
+               <li id="portfolio3">原生JS&CSS</li>
+           </ol>
+           <div class="portfolioBar">
+                <div id="barInnerStatu" class="barInner statu1">
+                    <div class="barInner"></div>
+                </div>
+           </div>
+       </nav>
+       <script>
+           portfolio1.onclick = function(){
+               barInnerStatu.className = 'barInner statu1'
+           }
+           portfolio2.onclick = function(){
+               barInnerStatu.className = 'barInner statu2'
+           }
+           portfolio3.onclick = function(){
+               barInnerStatu.className = 'barInner statu3'
+           }
+       </script>
+       <div class="works">
+           <div class="big" style="top: 0; left:0 ;">
+               <img src="./img/a.jpg" alt="作品1" style="width: 520px;height:520px;">
+           </div>
+           <div class="small" style="top: 0; right: 0;">
+            <img src="./img/b.jpg" alt="作品2" style="width: 250px; height: 250px;">
+           </div>
+           <div class="small" style="bottom: -8px; right: 0; " >
+            <img src="./img/c.jpg" alt="作品3" style="width: 250px; height: 250px;">
+           </div>
+       </div>
+    </section>
+
+</body>
+</html>
